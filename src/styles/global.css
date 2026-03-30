@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
+/* Scrollbar personnalisée */
+::-web-kit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-web-kit-scrollbar-track {
+    background: #fff;
+}
+
+::-web-kit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-web-kit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
