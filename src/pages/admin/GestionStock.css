@@ -1,0 +1,13 @@
+.stock-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.stock-alert {
+  color: var(--danger);
+  font-weight: 500;
+}
+
+.stock-ok {
+  color: var(--success);
+}
