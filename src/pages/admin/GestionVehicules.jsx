@@ -13,7 +13,7 @@ const initialVehicules = [
 
 export default function GestionVehicules() {
   const [search, setSearch] = useState('');
-  const [vehicules, setVehicules] = useState(initialVehicules);
+  const [vehicules] = useState(initialVehicules); //setVehicues
 
   const filteredVehicules = vehicules.filter(v => 
     v.marque.toLowerCase().includes(search.toLowerCase()) ||

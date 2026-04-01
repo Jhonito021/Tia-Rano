@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faClock, faUser, faCar } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/common/Button';
-import Input from '../../components/common/Input';
+// import Input from '../../components/common/Input';
 import Card from '../../components/common/Card';
 import './PriseRendezVous.css';
 

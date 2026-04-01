@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faEdit, faTrash, faSearch, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faTrash, faSearch, faEye } from '@fortawesome/free-solid-svg-icons'; //faEdit
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
 import './GestionInterventions.css';
@@ -13,7 +13,7 @@ const initialInterventions = [
 
 export default function GestionInterventions() {
   const [search, setSearch] = useState('');
-  const [interventions, setInterventions] = useState(initialInterventions);
+  const [interventions] = useState(initialInterventions); //setInterventions
 
   const getStatusClass = (statut) => {
     switch(statut) {

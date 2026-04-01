@@ -10,7 +10,7 @@ export const GarageProvider = ({ children }) => {
   const [interventions, setInterventions] = useState([]);
   const [stock, setStock] = useState([]);
   const [factures, setFactures] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading] = useState(false); //setLoading
 
   const refreshClients = async () => {
     // Appel API à implémenter

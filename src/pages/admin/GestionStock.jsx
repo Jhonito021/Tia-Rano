@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faEdit, faTrash, faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faEdit, faTrash, faSearch } from '@fortawesome/free-solid-svg-icons'; //faSchoppingCart
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
 import './GestionStock.css';
@@ -13,7 +13,7 @@ const initialStock = [
 
 export default function GestionStock() {
   const [search, setSearch] = useState('');
-  const [stock, setStock] = useState(initialStock);
+  const [stock] = useState(initialStock); // setStock
 
   const isLowStock = (quantite, seuil) => quantite <= seuil;
 
