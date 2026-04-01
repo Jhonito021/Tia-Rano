@@ -1,3 +1,5 @@
+/* GestionInterventions.css - Version responsive */
+
 .interventions-page {
   max-width: 1400px;
   margin: 0 auto;
@@ -24,4 +26,13 @@
 .status-enattente {
   background-color: var(--bg-tertiary);
   color: var(--text-secondary);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media (max-width: 767px) {
+  .status-badge {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
 }

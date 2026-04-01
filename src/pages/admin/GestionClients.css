@@ -1,3 +1,5 @@
+/* GestionClients.css - Version responsive */
+
 .clients-page {
   max-width: 1400px;
   margin: 0 auto;
@@ -10,6 +12,12 @@
   margin-bottom: 24px;
   flex-wrap: wrap;
   gap: 16px;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 .search-bar {
@@ -40,8 +48,10 @@
   border-color: var(--primary);
 }
 
+/* Table responsive */
 .table-responsive {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .data-table {
@@ -114,4 +124,63 @@
 
 .action-delete:hover {
   color: var(--danger-hover);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  
+  .page-title {
+    font-size: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px 10px 10px 38px;
+    font-size: 13px;
+  }
+  
+  .search-icon {
+    left: 12px;
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .data-table th:last-child,
+  .data-table td:last-child {
+    position: sticky;
+    right: 0;
+    background-color: var(--card-bg);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .vehicule-badge {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+  
+  .actions {
+    gap: 8px;
+  }
+}
+
+/* Tablette (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .data-table {
+    min-width: 600px;
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 12px;
+  }
 }

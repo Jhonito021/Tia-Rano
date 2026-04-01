@@ -1,3 +1,5 @@
+/* GestionEmployes.css - Version responsive */
+
 .employes-page {
   max-width: 1400px;
   margin: 0 auto;
@@ -13,4 +15,13 @@
 .status-actif {
   background-color: var(--success-light);
   color: var(--success);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media (max-width: 767px) {
+  .employe-status {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
 }

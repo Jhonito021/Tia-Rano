@@ -19,3 +19,12 @@
   background-color: var(--warning-light);
   color: var(--warning);
 }
+
+/* ========== MEDIA QUERIES ========== */
+
+@media (max-width: 767px) {
+  .facture-status {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
+}

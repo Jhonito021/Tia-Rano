@@ -1,3 +1,5 @@
+/* SuiviReparations.css - Version responsive */
+
 .suivi-reparations {
   max-width: 800px;
   margin: 0 auto;
@@ -18,6 +20,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .intervention-header h3 {
@@ -56,4 +60,29 @@
 .intervention-date {
   font-size: 12px;
   color: var(--text-secondary);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media (max-width: 767px) {
+  .suivi-reparations {
+    max-width: 100%;
+  }
+  
+  .intervention-card {
+    padding: 16px;
+  }
+  
+  .intervention-header h3 {
+    font-size: 14px;
+  }
+  
+  .status-badge {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+  
+  .intervention-service {
+    font-size: 13px;
+  }
 }

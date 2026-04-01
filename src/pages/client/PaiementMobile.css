@@ -1,3 +1,5 @@
+/* PaiementMobile.css - Version responsive */
+
 .paiement-mobile {
   max-width: 600px;
   margin: 0 auto;
@@ -20,6 +22,11 @@
   font-weight: 700;
   color: var(--primary);
   margin: 8px 0;
+}
+
+.facture-description {
+  font-size: 14px;
+  color: var(--text-secondary);
 }
 
 .payment-methods {
@@ -60,4 +67,47 @@
 .confirmation-icon {
   font-size: 64px;
   margin-bottom: 24px;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+  .paiement-mobile {
+    max-width: 100%;
+  }
+  
+  .paiement-form {
+    padding: 16px;
+  }
+  
+  .facture-info {
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .facture-montant {
+    font-size: 24px;
+  }
+  
+  .payment-method {
+    padding: 12px;
+    gap: 12px;
+  }
+  
+  .payment-method span:first-of-type {
+    font-size: 20px;
+  }
+  
+  .payment-method span:last-of-type {
+    font-size: 14px;
+  }
+  
+  .paiement-confirmation {
+    padding: 32px 16px;
+  }
+  
+  .confirmation-icon {
+    font-size: 48px;
+  }
 }

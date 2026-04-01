@@ -1,3 +1,5 @@
+/* MesVehicules.css - Version responsive */
+
 .mes-vehicules {
   max-width: 1200px;
   margin: 0 auto;
@@ -13,6 +15,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  padding: 20px;
 }
 
 .vehicule-icon {
@@ -50,4 +53,40 @@
 .vehicule-actions {
   display: flex;
   gap: 8px;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+  .vehicules-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .vehicule-card {
+    padding: 16px;
+  }
+  
+  .vehicule-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+  
+  .vehicule-info h3 {
+    font-size: 14px;
+  }
+  
+  .immatriculation {
+    font-size: 12px;
+  }
+}
+
+/* Tablette (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .vehicules-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
 }

@@ -1,3 +1,5 @@
+/* GestionStock.css - Version responsive */
+
 .stock-page {
   max-width: 1400px;
   margin: 0 auto;
@@ -10,4 +12,13 @@
 
 .stock-ok {
   color: var(--success);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media (max-width: 767px) {
+  .stock-alert,
+  .stock-ok {
+    font-size: 12px;
+  }
 }

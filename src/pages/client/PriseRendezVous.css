@@ -1,3 +1,5 @@
+/* PriseRendezVous.css - Version responsive */
+
 .prise-rdv {
   max-width: 600px;
   margin: 0 auto;
@@ -42,4 +44,36 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+  .prise-rdv {
+    max-width: 100%;
+  }
+  
+  .rdv-form-container {
+    padding: 16px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group label {
+    font-size: 13px;
+  }
+  
+  .form-group select,
+  .form-group input {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 }

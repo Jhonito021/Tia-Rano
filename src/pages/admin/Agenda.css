@@ -1,3 +1,5 @@
+/* Agenda.css - Version responsive */
+
 .agenda-page {
   max-width: 1400px;
   margin: 0 auto;
@@ -8,6 +10,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .calendar-header button {
@@ -16,6 +20,11 @@
   border-radius: 50%;
   background-color: var(--bg-tertiary);
   color: var(--text-primary);
+  cursor: pointer;
+}
+
+.calendar-header h2 {
+  font-size: 18px;
 }
 
 .calendar-weekdays {
@@ -72,4 +81,49 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+  .calendar-header {
+    margin-bottom: 16px;
+  }
+  
+  .calendar-header h2 {
+    font-size: 16px;
+  }
+  
+  .weekday {
+    padding: 8px 4px;
+    font-size: 11px;
+  }
+  
+  .calendar-day {
+    min-height: 70px;
+    padding: 4px;
+  }
+  
+  .day-number {
+    font-size: 12px;
+  }
+  
+  .appointment-indicator {
+    font-size: 8px;
+    padding: 1px 2px;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
+/* Tablette (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .calendar-day {
+    min-height: 85px;
+  }
+  
+  .appointment-indicator {
+    font-size: 9px;
+  }
 }
