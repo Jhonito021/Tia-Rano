@@ -41,7 +41,7 @@ export default function Connexion() {
       <div className="connexion-card">
         <div className="connexion-header">
           <h1>Connexion</h1>
-          <p>Espace Garage Auto-Moto</p>
+          <p>Bienvenue chez TwentyOne Garage</p>
         </div>
 
         <form onSubmit={handleSubmit}>

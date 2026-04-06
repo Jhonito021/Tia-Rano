@@ -21,7 +21,7 @@ export default function ClientLayout() {
     <div className="client-layout">
       <header className="client-header">
         <div className="client-header-content">
-          <h1 className="client-logo">Garage Auto-Moto</h1>
+          <h1 className="client-logo">TwentyOne Garage</h1>
           <div className="client-user">
             <FontAwesomeIcon icon={faUser} />
             <span>{user?.nom || 'Client'}</span>
