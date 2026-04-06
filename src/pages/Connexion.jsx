@@ -83,8 +83,8 @@ export default function Connexion() {
 
         <div className="connexion-footer">
           <p>Comptes de démonstration :</p>
-          <p className="demo">Admin : admin@garage.com / admin123</p>
-          <p className="demo">Client : client@test.com / client123</p>
+          {/* <p className="demo">Admin : admin@garage.com / admin123</p> */}
+          <p className="demo">Client : client@test.com / mdp: client123</p>
         </div>
       </div>
     </div>
