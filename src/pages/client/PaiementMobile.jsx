@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobileAlt, faCheck } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
-import './PaiementMobile.css';
+// import './PaiementMobile.css';
 
 const paymentMethods = [
   { id: 'mvola', name: 'Mvola', color: '#00a859', icon: '📱' },

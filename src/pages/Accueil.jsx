@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWrench, faCar, faClock, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
-import './Accueil.css';
+import './Accueil.css'; 
 
 export default function Accueil() {
   return (

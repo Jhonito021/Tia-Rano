@@ -7,7 +7,7 @@ import {
   faTimes, faSignOutAlt
 } from '@fortawesome/free-solid-svg-icons';
 import { useAuth } from '../../hooks/useAuth';
-import './AdminLayout.css';
+// import './AdminLayout.css';
 
 const menuItems = [
   { path: '/admin', icon: faDashboard, label: 'Tableau de bord' },

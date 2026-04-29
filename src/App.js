@@ -6,6 +6,7 @@ import AppRoutes from './routes/AppRoutes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
+import './assets/styles/global.css'
 
 function App() {
   const [theme, setTheme] = useState(() => {

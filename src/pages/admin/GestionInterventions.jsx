@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faTrash, faSearch, faEye } from '@fortawesome/free-solid-svg-icons'; //faEdit
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
-import './GestionInterventions.css';
+// import './GestionInterventions.css';
 
 const initialInterventions = [
   { id: 1, client: 'Jean Dupont', vehicule: 'Toyota Corolla', date: '2024-03-25', statut: 'En cours', montant: '150 000 Ar' },

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faEdit, faTrash, faSearch, faUser, faWrench } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
-import './GestionEmployes.css';
+// import './GestionEmployes.css';
 
 const initialEmployes = [
   { id: 1, nom: 'Rakoto Michel', poste: 'Mécanicien', telephone: '032 11 22 33', email: 'michel@garage.com', statut: 'Actif' },

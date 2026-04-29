@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../../components/common/Card';
-import './Historique.css';
+// import './Historique.css';
 
 const historique = [
   { id: 1, vehicule: 'Toyota Corolla', service: 'Vidange', date: '2024-02-10', montant: '35 000 Ar' },

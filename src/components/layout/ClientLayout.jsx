@@ -3,7 +3,7 @@ import { Outlet, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faCalendarAlt, faHistory, faFileInvoice, faCreditCard, faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useAuth } from '../../hooks/useAuth';
-import './ClientLayout.css';
+// import './ClientLayout.css';
 
 const menuItems = [
   { path: '/client/vehicules', icon: faCar, label: 'Mes véhicules' },

@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faWrench, faUsers, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons';
 import Card from '../../components/common/Card';
-import './Dashboard.css';
+// import './Dashboard.css';
 
 const stats = [
   { title: 'Véhicules en cours', value: 24, icon: faCar, color: '#2563eb' },
