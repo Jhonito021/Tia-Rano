@@ -4,7 +4,7 @@ import { faCalendarAlt, faClock, faUser, faCar } from '@fortawesome/free-solid-s
 import Button from '../../components/common/Button';
 // import Input from '../../components/common/Input';
 import Card from '../../components/common/Card';
-// import './PriseRendezVous.css';
+import './PriseRendezVous.css';
 
 const services = [
   { id: 1, nom: 'Vidange', duree: '30 min', prix: '35 000 Ar' },

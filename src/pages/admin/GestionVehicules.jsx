@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faEdit, faTrash, faSearch, faCar, faMotorcycle } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
-// import './GestionVehicules.css';
+import './GestionVehicules.css';
 
 const initialVehicules = [
   { id: 1, client: 'Jean Dupont', marque: 'Toyota', modele: 'Corolla', immatriculation: '1234 TAN', type: 'auto', annee: 2020 },

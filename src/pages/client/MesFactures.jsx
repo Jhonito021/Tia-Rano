@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faEye, faCreditCard } from '@fortawesome/free-solid-svg-icons';
 import Card from '../../components/common/Card';
-// import './MesFactures.css';
+import './MesFactures.css';
 
 const factures = [
   { id: 'FAC-001', date: '2024-03-25', montant: '150 000 Ar', statut: 'Payée' },

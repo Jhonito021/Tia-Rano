@@ -4,7 +4,7 @@ import { faPlus, faEdit, faTrash, faSearch, faEnvelope, faPhone, faCar } from '@
 import Button from '../../components/common/Button';
 // import Input from '../../components/common/Input';
 import Card from '../../components/common/Card';
-// import './GestionClients.css';
+import './GestionClients.css';
 
 const initialClients = [
   { id: 1, nom: 'Jean Dupont', email: 'jean.dupont@email.com', telephone: '032 12 345 67', vehicules: 2, adresse: 'Antananarivo' },

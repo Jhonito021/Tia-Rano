@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWrench, faSpinner, faCheckCircle, faClock } from '@fortawesome/free-solid-svg-icons';
 import Card from '../../components/common/Card';
-// import './SuiviReparations.css';
+import './SuiviReparations.css';
 
 const interventions = [
   { id: 1, vehicule: 'Toyota Corolla', service: 'Vidange', date: '2024-03-25', statut: 'en_cours' },

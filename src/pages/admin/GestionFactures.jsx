@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faDownload, faEye, faCreditCard } from '@fortawesome/free-solid-svg-icons';
 import Card from '../../components/common/Card';
-// import './GestionFactures.css';
+import './GestionFactures.css';
 
 const initialFactures = [
   { id: 'FAC-001', client: 'Jean Dupont', date: '2024-03-25', montant: '150 000 Ar', statut: 'Payée' },

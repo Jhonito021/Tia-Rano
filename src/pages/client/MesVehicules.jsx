@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faEdit, faTrash, faCar, faMotorcycle } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
-// import './MesVehicules.css';
+import './MesVehicules.css';
 
 const initialVehicules = [
   { id: 1, marque: 'Toyota', modele: 'Corolla', immatriculation: '1234 TAN', type: 'auto', annee: 2020 },

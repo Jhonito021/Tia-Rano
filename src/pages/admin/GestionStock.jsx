@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faEdit, faTrash, faSearch } from '@fortawesome/free-solid-svg-icons'; //faSchoppingCart
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
-// import './GestionStock.css';
+import './GestionStock.css';
 
 const initialStock = [
   { id: 1, nom: 'Filtre à huile', reference: 'FH-001', quantite: 12, seuil: 5, prix: '8 500 Ar' },
