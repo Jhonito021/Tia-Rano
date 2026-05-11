@@ -294,16 +294,18 @@
                     <div class="contact-info">
                         <h2>Contactez-nous</h2>
                         <p><i class="fas fa-phone-alt"></i> +261 34 83 477 47</p>
-                        <p><i class="fas fa-envelope"></i> contact@tirano.mg</p>
-                        <p><i class="fab fa-whatsapp"></i> WhatsApp : +261 34 83 477 47</p>
                         <p><i class="fas fa-clock"></i> Lun-Ven: 8h - 17h | Sam: 9h - 12h</p>
+                        <div class="social-links">
+                            <a href="https://wa.me/261341234568?text=Bonjour%20TI%20RANO%2C%20je%20souhaite%20obtenir%20des%20informations." target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/1LrMRp6Tjo/?mibextid=wwXIfr" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        </div>
                     </div>
                     <div class="contact-form">
                         <form id="contactForm">
                             <input type="text" placeholder="Nom" id="contact_name" required>
                             <input type="email" placeholder="Email" id="contact_email" required>
                             <textarea placeholder="Message" rows="4" id="contact_msg" required></textarea>
-                            <button type="submit" class="btn btn-secondary">Envoyer message</button>
+                            <button type="submit" class="btn btn-secondary" style="color: #0A2F6C">Envoyer message</button>
                             <div id="contactMessage" class="form-feedback"></div>
                         </form>
                     </div>
@@ -319,10 +321,10 @@
             <div class="container">
                 <h2 class="section-title">Foire aux <span class="highlight">questions</span></h2>
                 <div class="faq-grid">
-                    <div class="faq-item"><h3>⏱️ Délais pour un forage ?</h3><p>Entre 2 et 4 semaines selon la géologie et la profondeur. Étude préalable incluse.</p></div>
-                    <div class="faq-item"><h3>💰 Prix d'un forage ?</h3><p>Devis gratuit sur mesure en fonction des paramètres : localisation, profondeur, équipement.</p></div>
-                    <div class="faq-item"><h3>🔧 Entretien pompe immergée ?</h3><p>Nous proposons des contrats de maintenance annuelle.</p></div>
-                    <div class="faq-item"><h3>💧 Qualité d'eau garantie ?</h3><p>Analyses bactériologiques et traitement intégré si nécessaire.</p></div>
+                    <div class="faq-item"><h3><i class="fas fa-clock"></i> Délais pour un forage ?</h3><p>Entre 2 et 4 semaines selon la géologie et la profondeur. Étude préalable incluse.</p></div>
+                    <div class="faq-item"><h3><i class="fas fa-tags"></i> Prix d'un forage ?</h3><p>Devis gratuit sur mesure en fonction des paramètres : localisation, profondeur, équipement.</p></div>
+                    <div class="faq-item"><h3><i class="fas fa-tools"></i> Entretien pompe immergée ?</h3><p>Nous proposons des contrats de maintenance annuelle.</p></div>
+                    <div class="faq-item"><h3><i class="fas fa-tint"></i> Qualité d'eau garantie ?</h3><p>Analyses bactériologiques et traitement intégré si nécessaire.</p></div>
                 </div>
             </div>
         </section>
@@ -331,11 +333,21 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>© 2025 TI RANO - Expert forage et eau potable Madagascar | Tous droits réservés</p>
-                <p><i class="fas fa-hard-hat"></i> Solutions durables pour l'accès à l'eau</p>
+                <p>&copy; <span id="date"></span> TI RANO - Expert forage et eau potable Madagascar | Tous droits réservés</p>
+                <p><i class="fas fa-hard-hat"></i> Confiez votre projet à des vrais professionnels.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const date = new Date();
+        const option = {
+            year: "numeric",
+            month: "long"
+        };
+        const fullDate = date.toLocaleDateString(undefined, option);
+        document.getElementById("date").textContent = fullDate;
+    </script>
 
     <script src="assets/js/script.js"></script>
 </body>

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -408,7 +409,7 @@ input:focus, select:focus, textarea:focus {
 }
 .contact-info i {
     width: 30px;
-    color: var(--bleu-roi);
+    /* color: var(--bleu-roi); */
 }
 .social-links {
     margin-top: 20px;
@@ -416,8 +417,28 @@ input:focus, select:focus, textarea:focus {
     gap: 15px;
 }
 .social-links a {
-    color: var(--bleu-roi);
+    color: var(--gris-clair);
     font-size: 1.5rem;
+    text-align: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: var(--bleu-roi);
+    color: var(--gris-clair);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link a {
+    color: var(--gris-clair);
 }
 .contact-form form {
     background: white;
