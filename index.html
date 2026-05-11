@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>TI RANO | Forage & Adduction d'eau potable - Madagascar</title>
+    <meta name="description" content="TI RANO : expert en forage d'eau, adduction potable, étude géophysique et traitement d'eau à Madagascar. +300 forages réalisés. Devis et réservation en ligne.">
+    <meta name="keywords" content="forage eau, adduction eau potable, étude géophysique, traitement eau, pompes immergées, hydroagricole, Madagascar">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Leaflet pour la carte de localisation -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Flatpickr pour calendrier interactif -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-tint"></i>
+                    <span>TI RANO</span>
+                    <small>Expertise eau potable</small>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#reservation">Réservation</a></li>
+                        <li><a href="#devis">Devis</a></li>
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="mobile-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION ACCUEIL avec bannière -->
+        <section id="accueil" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Votre accès à l’eau potable, <span class="highlight">fiable et durable</span></h1>
+                    <p>Spécialiste du forage et de l'hydrogéologie à Madagascar. +300 forages réussis, des solutions sur mesure pour l’adduction d’eau, l’analyse et le traitement.</p>
+                    <div class="hero-buttons">
+                        <a href="#devis" class="btn btn-primary"><i class="fas fa-file-invoice"></i> Demander un devis</a>
+                        <a href="#reservation" class="btn btn-secondary"><i class="fas fa-calendar-alt"></i> Réserver un créneau</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chiffres clés -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="fas fa-hard-hat"></i>
+                        <span class="stat-number">300+</span>
+                        <span class="stat-label">Forages réalisés</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Taux de réussite</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-clock"></i>
+                        <span class="stat-number">6 ans</span>
+                        <span class="stat-label">d'expérience (depuis 2019)</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-smile"></i>
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Clients satisfaits</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aperçu des services (accueil) -->
+        <section class="services-preview">
+            <div class="container">
+                <h2 class="section-title">Nos expertises <span class="highlight">en un coup d'œil</span></h2>
+                <div class="services-grid">
+                    <div class="service-card"><i class="fas fa-droplet"></i><h3>Adduction eau potable</h3><p>Réseaux et captage pour un accès durable.</p></div>
+                    <div class="service-card"><i class="fas fa-magnet"></i><h3>Étude géophysique du sol</h3><p>Localisation précise des nappes phréatiques.</p></div>
+                    <div class="service-card"><i class="fas fa-hard-hat"></i><h3>Forage d'eau</h3><p>Techniques modernes, résultats garantis.</p></div>
+                    <div class="service-card"><i class="fas fa-flask"></i><h3>Traitement & analyse de l'eau</h3><p>Laboratoire, potabilité et conformité.</p></div>
+                    <div class="service-card"><i class="fas fa-water-pump"></i><h3>Installation pompes immergées</h3><p>Pompes haute efficacité.</p></div>
+                    <div class="service-card"><i class="fas fa-tractor"></i><h3>Aménagement hydroagricole</h3><p>Irrigation, réservoirs, systèmes agricoles.</p></div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#services" class="btn btn-outline">Voir tous les détails <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES DETAILLES -->
+        <section id="services" class="full-services">
+            <div class="container">
+                <h2 class="section-title">Nos prestations <span class="highlight">complètes</span></h2>
+                <div class="service-detail-list">
+                    <div class="service-detail">
+                        <div class="service-icon"><i class="fas fa-water"></i></div>
+                        <div class="service-info">
+                            <h3>Adduction d'eau potable</h3>
+                            <p>Conception et réalisation de réseaux d'adduction, châteaux d'eau, canalisations. Accès durable pour villages et villes.</p>
+                            <ul>
+                                <li>Avantages : réduction des maladies hydriques, débit continu.</li>
+                                <li>Processus : étude -> tracé -> installation -> mise en service.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-detail">
+                        <div class="service-icon"><i class="fas fa-waveform"></i></div>
+                        <div class="service-info">
+                            <h3>Étude géophysique du sol</h3>
+                            <p>Méthodes électriques et magnétiques pour détecter les nappes phréatiques avant forage.</p>
+                            <ul>
+                                <li>Avantages : optimisation des coûts, taux de succès maximal.</li>
+                                <li>Processus : terrain, sondages, interprétation des données.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-detail">
+                        <div class="service-icon"><i class="fas fa-drill"></i></div>
+                        <div class="service-info">
+                            <h3>Forage d'eau</h3>
+                            <p>Sondage rotary, marteau fond de trou, diamètre adapté à votre besoin. +300 forages réalisés.</p>
+                            <ul>
+                                <li>Garantie de débit et qualité.</li>
+                                <li>De la reconnaissance à la réalisation complète.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-detail">
+                        <div class="service-icon"><i class="fas fa-vial"></i></div>
+                        <div class="service-info">
+                            <h3>Traitement et analyse de l'eau</h3>
+                            <p>Analyses physico-chimiques et bactériologiques. Solutions de potabilisation (filtration, UV, chloration).</p>
+                            <ul>
+                                <li>Laboratoire mobile disponible.</li>
+                                <li>Certificat de potabilité.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-detail">
+                        <div class="service-icon"><i class="fas fa-pump-water"></i></div>
+                        <div class="service-info">
+                            <h3>Installation pompes immergées</h3>
+                            <p>Pompes Grundfos, Lowara, dimensionnement électrique et panneaux solaires.</p>
+                            <ul>
+                                <li>Suivi maintenance et SAV.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-detail">
+                        <div class="service-icon"><i class="fas fa-seedling"></i></div>
+                        <div class="service-info">
+                            <h3>Aménagement hydroagricole</h3>
+                            <p>Systèmes d'irrigation goutte-à-goutte, bassins, micro-barrages pour périmètres agricoles.</p>
+                            <ul>
+                                <li>Amélioration des rendements, économie d'eau.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESERVATION -->
+        <section id="reservation" class="booking-section">
+            <div class="container">
+                <h2 class="section-title">Réserver un <span class="highlight">créneau</span></h2>
+                <p>Choisissez un service, indiquez votre localisation et sélectionnez une date.</p>
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Nom complet *</label>
+                            <input type="text" id="bk_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-phone"></i> Téléphone *</label>
+                            <input type="tel" id="bk_phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-concierge-bell"></i> Service choisi *</label>
+                            <select id="bk_service" required>
+                                <option value="">-- Sélectionnez --</option>
+                                <option>Adduction eau potable</option>
+                                <option>Étude géophysique du sol</option>
+                                <option>Forage d'eau</option>
+                                <option>Traitement et analyse de l'eau</option>
+                                <option>Installation de pompes immergées</option>
+                                <option>Aménagement hydroagricole</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-map-marker-alt"></i> Localisation (région/ville) *</label>
+                            <input type="text" id="bk_location" placeholder="ex: Antananarivo, Mahajanga..." required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-check"></i> Date de rendez-vous *</label>
+                        <input type="text" id="calendarInput" placeholder="Choisissez une date" readonly style="background-color: white; cursor: pointer;">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-comment"></i> Détails du besoin</label>
+                        <textarea id="bk_message" rows="2" placeholder="Informations complémentaires..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-check-circle"></i> Réserver mon créneau</button>
+                    <div id="bookingMessage" class="form-feedback"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- DEMANDE DEVIS -->
+        <section id="devis" class="quote-section">
+            <div class="container">
+                <h2 class="section-title">Demande de <span class="highlight">devis personnalisé</span></h2>
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-row">
+                        <div class="form-group"><label>Nom & prénom *</label><input type="text" id="q_name" required></div>
+                        <div class="form-group"><label>Email *</label><input type="email" id="q_email" required></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label>Téléphone</label><input type="tel" id="q_phone"></div>
+                        <div class="form-group"><label>Type de projet *</label><select id="q_project" required><option>Forage domestique</option><option>Forage agricole</option><option>Adduction communautaire</option><option>Analyse / traitement</option><option>Pompage solaire</option></select></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label>Budget estimatif (Ar)</label><input type="text" id="q_budget" placeholder="Ex: 5 000 000 - 15 000 000"></div>
+                        <div class="form-group"><label>Localisation *</label><input type="text" id="q_location" required></div>
+                    </div>
+                    <div class="form-group"><label>Message personnalisé</label><textarea id="q_message" rows="3" placeholder="Précisez vos besoins, contraintes techniques..."></textarea></div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Envoyer la demande de devis</button>
+                    <div id="quoteMessage" class="form-feedback"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- A PROPOS -->
+        <section id="a-propos" class="about-section">
+            <div class="container">
+                <div class="about-flex">
+                    <div class="about-text">
+                        <h2>À propos de <span class="highlight">TI RANO</span></h2>
+                        <p>Fondée en 2019 à Madagascar, TI RANO est devenue une référence en matière de forage d'eau et d'adduction potable. Avec plus de 300 forages réalisés, notre équipe pluridisciplinaire allie géophysique, ingénierie hydraulique et respect des normes environnementales.</p>
+                        <p><strong>Nos valeurs :</strong> qualité, fiabilité, transparence. Chaque projet est unique : de l'étude préliminaire à la maintenance.</p>
+                        <ul class="values-list">
+                            <li><i class="fas fa-check-circle"></i> Expertise terrain & technologique</li>
+                            <li><i class="fas fa-handshake"></i> Relation client durable</li>
+                            <li><i class="fas fa-leaf"></i> Engagement pour l'accès à l'eau potable</li>
+                        </ul>
+                    </div>
+                    <div class="about-stats">
+                        <div class="about-card"><i class="fas fa-calendar-alt"></i><span>2019</span><p>Année de création</p></div>
+                        <div class="about-card"><i class="fas fa-tint"></i><span>+300</span><p>Forages réussis</p></div>
+                        <div class="about-card"><i class="fas fa-globe-africa"></i><span>Madagascar</span><p>Présence nationale</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT + CARTE -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Contactez-nous</h2>
+                        <p><i class="fas fa-phone-alt"></i> +261 34 12 345 67</p>
+                        <p><i class="fas fa-envelope"></i> contact@tirano.mg</p>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp : +261 34 12 345 68</p>
+                        <p><i class="fas fa-clock"></i> Lun-Ven: 8h - 17h | Sam: 9h - 12h</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <input type="text" placeholder="Nom" id="contact_name" required>
+                            <input type="email" placeholder="Email" id="contact_email" required>
+                            <textarea placeholder="Message" rows="4" id="contact_msg" required></textarea>
+                            <button type="submit" class="btn btn-secondary">Envoyer message</button>
+                            <div id="contactMessage" class="form-feedback"></div>
+                        </form>
+                    </div>
+                    <div class="contact-map">
+                        <div id="map" style="height: 250px; width: 100%; border-radius: 12px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Foire aux <span class="highlight">questions</span></h2>
+                <div class="faq-grid">
+                    <div class="faq-item"><h3>⏱️ Délais pour un forage ?</h3><p>Entre 2 et 4 semaines selon la géologie et la profondeur. Étude préalable incluse.</p></div>
+                    <div class="faq-item"><h3>💰 Prix d'un forage ?</h3><p>Devis gratuit sur mesure en fonction des paramètres : localisation, profondeur, équipement.</p></div>
+                    <div class="faq-item"><h3>🔧 Entretien pompe immergée ?</h3><p>Nous proposons des contrats de maintenance annuelle.</p></div>
+                    <div class="faq-item"><h3>💧 Qualité d'eau garantie ?</h3><p>Analyses bactériologiques et traitement intégré si nécessaire.</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 TI RANO - Expert forage et eau potable Madagascar | Tous droits réservés</p>
+                <p><i class="fas fa-hard-hat"></i> Solutions durables pour l'accès à l'eau</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
