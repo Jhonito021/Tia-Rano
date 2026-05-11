@@ -516,3 +516,21 @@ footer {
         display: none;
     }
 }
+
+/* Bouton WhatsApp flottant */
+.fab.fa-whatsapp {
+    font-size: 30px;
+}
+
+/* Animation douce pour les boutons */
+.btn-primary, .btn-secondary, .btn-outline {
+    transition: all 0.3s ease;
+}
+
+/* Responsive pour le bouton flottant */
+@media (max-width: 768px) {
+    .btn-primary, .btn-secondary {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
