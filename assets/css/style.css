@@ -47,10 +47,17 @@ header {
 
 .logo {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 8px;
     flex-wrap: wrap;
 }
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
 .logo i {
     font-size: 2rem;
     color: var(--bleu-roi);
@@ -517,10 +524,7 @@ footer {
     }
 }
 
-/* Bouton WhatsApp flottant */
-.fab.fa-whatsapp {
-    font-size: 30px;
-}
+
 
 /* Animation douce pour les boutons */
 .btn-primary, .btn-secondary, .btn-outline {
