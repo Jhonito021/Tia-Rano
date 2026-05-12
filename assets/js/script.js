@@ -212,6 +212,8 @@ const floatingWhatsApp = document.createElement('a');
 floatingWhatsApp.href = `https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%20TI%20RANO%2C%20je%20souhaite%20obtenir%20des%20informations.`;
 floatingWhatsApp.target = '_blank';
 floatingWhatsApp.innerHTML = '<i class="fab fa-whatsapp"></i>';
+
+
 floatingWhatsApp.style.position = 'fixed';
 floatingWhatsApp.style.bottom = '20px';
 floatingWhatsApp.style.right = '20px';
