@@ -179,15 +179,18 @@ if (contactForm) {
 // Carte Leaflet
 const mapContainer = document.getElementById('map');
 if (mapContainer && typeof L !== 'undefined') {
-    const map = L.map('map').setView([-18.8792, 47.5079], 13);
+    // Coordonnées extraites du lien Google Maps
+    const latitude = -18.9945; 
+    const longitude = 47.5361; 
+
+    const map = L.map('map').setView([latitude, longitude], 15);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> & CartoDB',
         subdomains: 'abcd',
         maxZoom: 19
     }).addTo(map);
-    L.marker([-18.8792, 47.5079]).addTo(map).bindPopup('TI RANO - Siège Antananarivo').openPopup();
-}
 
+    L.marker([latitude, longitude]).addTo(map).bindPopup('TI RANO - Mandrimena Iavoloha, Antananarivo').openPopup();}
 // Navigation smooth
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
