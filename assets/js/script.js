@@ -1,5 +1,5 @@
 // Numéro WhatsApp de l'entreprise (à remplacer par le vrai numéro)
-const WHATSAPP_NUMBER = "261385101400";
+const WHATSAPP_NUMBER = "261348347747";
 
 // Menu mobile
 const mobileBtn = document.querySelector('.mobile-menu');
